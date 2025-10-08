@@ -13,6 +13,6 @@ data = {
 }
 if st.button("Generate"):
     response = requests.post(API_URL, headers=headers, json=data)
-    st.write(response.status_code)
-    st.write(response.content)
+    # st.write(response.status_code)
+    # st.write(response.content)
     st.image(response.content)
